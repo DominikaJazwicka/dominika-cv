@@ -6,13 +6,13 @@ on:
 jobs:   
   web-deploy:
     name: Deploy
-    nuns-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
     - name: Get latest
-    uses: actions/checkout@v3
+      uses: actions/checkout@v3
     - name: Upload files
-    users: SamKirkland/FTP-Deploy-Action@v4.3.4
-    with: 
-      server: s31.mydevil.net
-      username: ${{secrets.username_ftp}}
-      password: ${{secrets.password_ftp}}
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with: 
+        server: s31.mydevil.net
+        username: ${{secrets.username_ftp}}
+        password: ${{secrets.password_ftp}}
