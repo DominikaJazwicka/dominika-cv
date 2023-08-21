@@ -132,7 +132,7 @@ img {
   text-transform: uppercase;
 }
 
-.progress {
+.progress1 {
   /* display: flex; */
   height: 1rem;
   width: 75%;
@@ -142,25 +142,25 @@ img {
   /* border-radius: 0.25rem; */
 }
 
-.progress.illustrator::after, .progress.indesign::after, .progress.photoshop::after, .progress.msword::after {
+.progress1.illustrator::after, .progress1.indesign::after, .progress1.photoshop::after, .progress1.msword::after {
   content: "";
   height: 100%;
   display: block;
   background-color: orange;
 }
 
-.progress.illustrator::after {
+.progress1.illustrator::after {
   width: 75%;
 }
 
-.progress.photoshop::after {
+.progress1.photoshop::after {
   width: 85%;
 }
 
-.progress.indesign::after {
+.progress1.indesign::after {
   width: 70%;
 }
 
-.progress.msword::after {
+.progress1.msword::after {
   width: 95%;
 }
