@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,115 +53,204 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --orange: orange;
+  --white: #fff;
+  --black: #000;
+}
+
 html {
+  font-size: 100%;
   font-family: "Open Sans", sans-serif;
 }
 
-.education-div {
-  background-color: #FF9C01;
+p {
+  font-weight: 300;
 }
 
-.name-div {
-  background-color: #FF9C01;
-  width: 100%;
-  height: 200px;
-  margin-top: 60px;
+a {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.col-left h2 {
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.col-right h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  min-height: 600px;
   position: relative;
-  z-index: 1;
-  margin-left: -50px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+.col-left {
+  width: 62%;
+}
+
+.col-right {
+  width: 38%;
+}
+
+.desc {
+  position: absolute;
+  right: 0;
+  top: 130px;
+  background-color: var(--orange);
+  width: 45%;
+  padding: 30px 0 30px 200px;
 }
 
 img {
-  z-index: 4;
+  z-index: 1;
   position: relative;
-  border-radius: 169px;
-  border: 5px solid #000;
 }
 
-.img-1 {
-  border-radius: 169px;
+.left-col-colors {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.right-col-colors {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.img-hero {
+  margin: 45px 0 0 55px;
+  border-radius: 185px;
   border: 20px solid #000;
 }
 
-.column-right-2 {
-  padding-top: 360px;
+.col-right {
+  justify-content: center;
+  align-items: center;
 }
 
-.main-title {
-  font-weight: 600;
-  font-size: 60px;
-  margin-left: 250px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.main-title-2 {
-  font-weight: 400;
-  font-size: 36px;
-  margin-left: 250px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.section-1 {
-  margin-top: 80px;
-  margin-left: 40px;
-}
-
-.column-right {
-  margin-top: -400px;
-  height: 100%;
-}
-
-@media only screen and (max-width: 1200px) {
-  .column-right {
-    margin-top: 0px;
-    height: 100%;
-  }
-}
-.contact-1 {
-  color: white;
-  text-transform: uppercase;
-  font-size: 36px;
-  padding: 14px;
-  border: 3px solid #FF9C01;
+.orange-border {
+  border: 5px solid var(--orange);
+  padding: 15px 20px;
+  width: 220px;
+  text-align: center;
 }
 
 .skills {
-  font-size: 18px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.progress1 {
-  /* display: flex; */
-  height: 1rem;
   width: 75%;
-  /* overflow: hidden; */
-  /* font-size: .75rem; */
-  border: 1px solid orange;
-  /* border-radius: 0.25rem; */
+  margin: 20px 0;
 }
 
-.progress1.illustrator::after, .progress1.indesign::after, .progress1.photoshop::after, .progress1.msword::after {
+.progress {
+  width: 100%;
+  border: 3px solid var(--orange);
+  height: 25px;
+  margin: 10px 0;
+}
+
+.progress.illustrator::after,
+.progress.indesign::after,
+.progress.photoshop::after,
+.progress.msword::after {
   content: "";
   height: 100%;
   display: block;
-  background-color: orange;
+  background-color: var(--orange);
 }
 
-.progress1.illustrator::after {
+.progress.illustrator::after {
   width: 75%;
 }
 
-.progress1.photoshop::after {
+.progress.photoshop::after {
   width: 85%;
 }
 
-.progress1.indesign::after {
+.progress.indesign::after {
   width: 70%;
 }
 
-.progress1.msword::after {
+.progress.msword::after {
   width: 95%;
 }
+
+.orange-bg {
+  background-color: var(--orange);
+  text-align: right;
+  width: 85%;
+  padding: 12px 35px 12px 0;
+}
+
+.desc {
+  color: var(--white);
+}
+
+.item {
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.square {
+  width: 30px;
+  margin: 20px;
+  height: 30px;
+  background-color: var(--orange);
+}
+
+.date {
+  width: 25%;
+}
+
+.item-desc {
+  width: 55%;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+  .container.mobile {
+    flex-direction: column;
+  }
+  .col-left,
+  .col-right {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

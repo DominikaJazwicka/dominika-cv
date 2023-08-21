@@ -1,5 +1,5 @@
 @use "sass:math";
 
-@mixin covertToRem($property, $value) {
-    #{property}: clac($value / 16) + rem; 
+@mixin convertToRem($property, $value) {
+    #{$property}: calc($value / 16) + rem;
 }
