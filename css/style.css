@@ -141,3 +141,10 @@ img {
   border: 1px solid orange;
   /* border-radius: 0.25rem; */
 }
+
+.progress.illustrator::after, .progress.indesign::after, .progress.photoshop::after, .progress.msword::after {
+  content: "";
+  height: 100%;
+  display: block;
+  background-color: orange;
+}
