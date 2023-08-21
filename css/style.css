@@ -132,28 +132,12 @@ img {
   text-transform: uppercase;
 }
 
-.progress.illustrator::after,
-.progress.indesign::after,
-.progress.photoshop::after,
-.progress.msword::after {
-  content: "";
-  height: 100%;
-  display: block;
-  background-color: var(--orange);
-}
-
-.progress.illustrator::after {
+.progress {
+  /* display: flex; */
+  height: 1rem;
   width: 75%;
-}
-
-.progress.photoshop::after {
-  width: 85%;
-}
-
-.progress.indesign::after {
-  width: 70%;
-}
-
-.progress.msword::after {
-  width: 95%;
+  /* overflow: hidden; */
+  /* font-size: .75rem; */
+  border: 1px solid orange;
+  /* border-radius: 0.25rem; */
 }
