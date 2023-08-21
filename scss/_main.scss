@@ -82,19 +82,24 @@ img {
 }
 
 
-// .illustrator::after{
-//     height: 100%;
-//     display: block;
-//     background-color: #FF9C01;
-//     border: 3px solid #FF9C01;
-// }
-
-
-
-.progress {
-    display: flex;
-    height: 20px !important;
-    overflow: hidden;
-    background-color: #FF9C01 !important;
-    border-radius: 0 !important;
+.progress.illustrator::after,
+.progress.indesign::after,
+.progress.photoshop::after,
+.progress.msword::after {
+    content: '';   
+    height: 100%;
+    display: block;
+    background-color: var(--orange);
+}
+.progress.illustrator::after {
+    width: 75%;
+}
+.progress.photoshop::after {
+    width: 85%;
+}
+.progress.indesign::after {
+    width: 70%;
+}
+.progress.msword::after {
+    width: 95%;
 }
