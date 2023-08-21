@@ -148,3 +148,19 @@ img {
   display: block;
   background-color: orange;
 }
+
+.progress.illustrator::after {
+  width: 75%;
+}
+
+.progress.photoshop::after {
+  width: 85%;
+}
+
+.progress.indesign::after {
+  width: 70%;
+}
+
+.progress.msword::after {
+  width: 95%;
+}
