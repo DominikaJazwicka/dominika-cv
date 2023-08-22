@@ -158,6 +158,7 @@ img {
   margin: 45px 0 0 55px;
   border-radius: 185px;
   border: 20px solid #000;
+  margin-bottom: 50px;
 }
 
 .col-right {
@@ -248,7 +249,7 @@ img {
 
 .address, .web, .phone {
   margin-left: 90px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .address-info, .web-info, .phone-info {
@@ -257,6 +258,64 @@ img {
   margin-left: 20px;
 }
 
+.cv-icon {
+  color: var(--orange);
+  font-size: 26px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.icon-media {
+  color: var(--black);
+  font-size: 28px;
+  padding: 5px;
+  background-color: var(--white);
+  margin: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.skills-element {
+  display: flex;
+  justify-content: center;
+}
+
+.media-after {
+  height: 3px;
+  color: var(--white);
+  background-color: var(--white);
+  width: 265px;
+  position: absolute;
+  margin-bottom: 60px;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: var(--orange);
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 750px) {
+  .desc {
+    position: static;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .footer {
+    display: none;
+  }
+  .orange-border-1 {
+    margin-top: 100px;
+  }
+  .social-media {
+    margin-bottom: 50px;
+  }
+}
 @media (max-width: 768px) {
   html {
     font-size: 70%;
